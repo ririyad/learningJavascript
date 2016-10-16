@@ -1,0 +1,21 @@
+<!Doctype HTML>
+<html>
+    <h1>Testing For Loop</h1>
+    <body>
+        <script>
+            var degFaren = [212, 32, "same data", -459, 34, 112, 343, "some data again"];
+            var degCen = [];
+
+            for(var loopcounter in degFaren){
+                degCen[loopcounter] = (5/9) * (degFaren[loopcounter] - 32);
+            }
+
+            for(var loopcounter in degCen){
+                 if(isNaN(degFaren[loopcounter])){
+                    document.write("Invalid number!<br/>");
+                }
+                document.write(loopcounter + ": " + degCen[loopcounter] + "<br />");
+            }
+        </script>
+    </body>
+</html>

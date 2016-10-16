@@ -1,0 +1,21 @@
+<!Doctype HTML>
+<html>
+    <h1>Age Detection</h1>
+    <body>
+        <script>
+            var myAge = parseInt(prompt("Enter your age: ", ""), 10);
+            if(myAge >= 0 && myAge <= 10){
+                document.write("myage is under 0 and 10<br />");
+            }
+            if(!(myAge >= 0 && myAge <= 10)){
+                document.write("myage is not under 0 and 10<br />");
+            }
+            if(myAge >= 80 || myAge <= 10){
+                document.write("Age is 80 or above or 10 or below");
+            }
+            if((myAge >= 30 && myAge <= 39) || (myAge >= 80 && myAge <= 89)){
+                document.write("Age is between 30 and 39 or 80 and 89");
+            }
+        </script>
+    </body>
+</html>
